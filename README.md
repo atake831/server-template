@@ -14,6 +14,8 @@ god + unicorn + nginx + rails
 
 ```
 bundle install
+bundle exec rake db:migrate
+bundle exec god -c config/god/development.rb
 bundle exec god start unicorn
 ```
 
