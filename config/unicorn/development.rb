@@ -1,9 +1,11 @@
-# -*- coding: utf-8 -*-
 worker_processes (ENV['UNICORN_WORKER_PROCESSES'] || 4 ).to_i
 timeout 30
 preload_app true
 
-current_dir = '/data/prsys/webapp'
+system_user = 'prsys'
+app_name = 'webapp'
+
+current_dir = "/data/#{system_user}/#{app_name}"
 working_directory current_dir
 
 
@@ -11,7 +13,7 @@ listen "#{current_dir}/tmp/sockets/unicorn.sock", backlog: 64
 pid "#{current_dir}/tmp/pids/unicorn.pid"
 
 # log
-log_dir = '/data/prsys/log'
+log_dir = "/data/#{system_user}/log"
 stderr_path File.expand_path('unicorn.err', log_dir)
 stdout_path File.expand_path('unicorn.log', log_dir)
 
