@@ -9,7 +9,7 @@ log_dir = Pathname.new("/data/#{system_user}/log")
 God.watch do |w|
     w.name = 'unicorn'
     w.interval = 3.seconds
-    w.pid_file = root_dir.join('/tmp/pids/unicorn.pid')
+    w.pid_file = root_dir.join('tmp/pids/unicorn.pid')
     w.env = { 'RAILS_ENV' => rails_env, 'BUNDLE_GEMFILE' => root_dir.join('Gemfile') }
 
     w.start = "cd #{root_dir} && bundle exec unicorn -c #{root_dir.join("config/unicorn/#{rails_env}.rb")} -E #{rails_env} -D"
