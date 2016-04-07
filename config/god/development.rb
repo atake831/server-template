@@ -8,6 +8,7 @@ log_dir = "/data/#{system_user}/log"
 
 pid_dir = File.join(root_dir, 'tmp/pids')
 socket_dir = File.join(root_dir, 'tmp/sockets')
+# unicorn立ち上げに必要なdirectoryを作る
 FileUtils.mkdir_p(pid_dir) unless FileTest.exist?(pid_dir)
 FileUtils.mkdir_p(socket_dir) unless FileTest.exist?(socket_dir)
 
