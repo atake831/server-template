@@ -15,20 +15,20 @@ god + unicorn + nginx + rails
 ```
 bundle install
 bundle exec rake db:migrate
-bundle exec god -c config/god/development.rb
-bundle exec god start unicorn
+god -c config/god/development.rb
+god start unicorn
 ```
 
 神の使い方
 ```
-bundle exec god start unicorn
-bundle exec god stop unicorn
-bundle exec god restart unicorn
+god start unicorn
+god stop unicorn
+god restart unicorn
 ```
 
 神の止め方
 ```
-bundle exec god terminate
+god terminate
 ```
 
 
