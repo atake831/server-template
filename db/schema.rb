@@ -13,11 +13,11 @@
 
 ActiveRecord::Schema.define(version: 20160325114845) do
 
-  create_table "boards", force: :cascade do |t|
-    t.string   "title"
-    t.string   "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "boards", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string   "title",      limit: 255
+    t.string   "text",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
