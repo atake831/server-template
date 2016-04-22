@@ -38,12 +38,19 @@ gem 'weak_parameters'
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
+  gem 'rspec-power_assert' # for is_asserted_by
   gem 'guard-rspec'
   gem 'terminal-notifier'
   gem 'terminal-notifier-guard'
   gem 'factory_girl_rails'
   gem 'autodoc'
   gem 'database_rewinder'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+  gem 'pry-coolline'
+  gem 'awesome_print'
 end
 
 group :development do
