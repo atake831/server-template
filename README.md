@@ -12,6 +12,8 @@ god + unicorn + nginx + rails
 
 ## Usage
 
+.env.templateを元に.envを作成、編集
+
 ```
 bundle install
 bundle exec rake db:migrate
