@@ -51,7 +51,7 @@ config/unicorn/production.rb
 
 current_dir, log_dirあたりはよしなに。
 
-### unicorn
+### hosts
 
 apiを確認する時は/etc/hostsに以下を追記する
 
