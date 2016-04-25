@@ -51,6 +51,7 @@ group :development, :test do
   gem 'pry-stack_explorer'
   gem 'pry-coolline'
   gem 'awesome_print'
+  gem 'ffaker', '>= 2.1.0'
 end
 
 group :development do

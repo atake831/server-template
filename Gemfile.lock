@@ -82,6 +82,7 @@ GEM
     factory_girl_rails (4.7.0)
       factory_girl (~> 4.7.0)
       railties (>= 3.0.0)
+    ffaker (2.2.0)
     ffi (1.9.10)
     formatador (0.2.5)
     globalid (0.3.6)
@@ -291,6 +292,7 @@ DEPENDENCIES
   database_rewinder
   dotenv-rails
   factory_girl_rails
+  ffaker (>= 2.1.0)
   god
   guard-rspec
   jbuilder (~> 2.0)
