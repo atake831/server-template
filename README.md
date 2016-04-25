@@ -21,6 +21,14 @@ god -c config/god/development.rb
 god start unicorn
 ```
 
+### doc
+
+```
+AUTODOC=1 bundle exec rspec
+```
+
+### god
+
 神の使い方
 ```
 god start unicorn
